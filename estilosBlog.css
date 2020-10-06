@@ -8,9 +8,10 @@ h1{
     position: relative;
     text-align: left;
     margin-right: 0;
+    float: left;
 }
 .derecha{
     position: relative;
     text-align: right;
-    margin-top:0;
+    margin-left:0;
 }

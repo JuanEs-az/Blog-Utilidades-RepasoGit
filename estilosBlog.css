@@ -4,3 +4,13 @@ body{
 h1{
     text-align: center;
 }
+.izquierda{
+    position: relative;
+    text-align: left;
+    margin-right: 0;
+}
+.derecha{
+    position: relative;
+    text-align: right;
+    margin-top:0;
+}

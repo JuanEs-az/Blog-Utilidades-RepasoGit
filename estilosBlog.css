@@ -1,5 +1,8 @@
+*{
+    color: black
+}
 body{
-    background-color: tomato;
+    background-color: Tomato;
 }
 h1{
     text-align: center;
@@ -19,11 +22,21 @@ input[type="button"]:hover{
     background-color: DeepSkyBlue;
     transition: padding 0.5s ease;
 }
-
-.boton{
+.nums{
+    width: 100px;
+    border-radius: 12px;
+}
+.nums:hover{
+    background-color: tomato;
+    transition: background-color 0.5s ease;
+}
+.calculadora{
     text-align: center;
 }
-#campoFrase{
+.botonesFrases{
+    text-align: center;
+}
+#campo{
     font-size: xx-large;
     color: white;
     text-align:center;
@@ -34,8 +47,11 @@ input[type="button"]:hover{
     margin-right: 0;
     float: left;
 }
-.derecha{
+.derecha {
     position: relative;
     text-align: right;
-    margin-top:0;
+    margin-left: 880px;
+}
+.derecha *,.izquierda *{
+    text-align:center
 }

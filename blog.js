@@ -2,10 +2,9 @@ var fraseDeAmor = document.querySelector("#fraseDeAmor")
 var fraseDeDesamor = document.querySelector("#fraseDeDesamor")
 var fraseDeInspiracion = document.querySelector("#fraseDeInspiracion")
 var campoFrase = document.querySelector("#campoFrase")
-
 function obtenerNumeroAleatorio(min, max) {
     return Math.random() * (max - min) + min;
-  }
+}
 var amor = [
     "Te extraño, nunca lo dudes, te quiero no me lo preguntes, te amo así que nunca lo olvides.",
     "No sabes las ganas que tengo de poder verte.",
@@ -37,7 +36,6 @@ var desamor = [
     "Querer a alguien sin esperanza es duro, pero peor es vivir sin la esperanza de querer a alguien.",
     "Amar a alguien que pasa de ti es como querer volar sin alas.",
 ]
-
 var inspiracion = [
     "Las mejores y más bellas cosas del mundo no pueden ser tocadas o vistas-deben ser sentidas con el corazón.-Helen Keller.",
     "No te esfuerces por ser exitoso, más bien por ser de valor.-Albert Einstein.",
@@ -51,8 +49,6 @@ var inspiracion = [
     "Un año a partir de ahora desearás haber comenzado hoy.-Karen Lamb.",
     "No se trata de si te derriban, se trata de si te levantas.-Vince Lombardi.",
 ]
-
-
 fraseDeAmor.addEventListener("click",() => {
     let index = parseInt(obtenerNumeroAleatorio(0,amor.length))
     campoFrase.innerHTML = amor[index] + " ❤ "

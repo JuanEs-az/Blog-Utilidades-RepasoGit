@@ -3,6 +3,7 @@ body{
 }
 h1{
     text-align: center;
+    bottom:0;
 }
 input[type="button"]{
     font-size:small;

@@ -4,7 +4,27 @@ body{
 h1{
     text-align: center;
 }
+input[type="button"]{
+    font-size:small;
+    border-radius: 10px;
+    padding: 12px;
+    font-family:Consolas;
+    background-color: tomato;
+}
+input[type="button"]:hover{
+    border-radius: 10px;
+    padding: 20px;
+    font-family:Consolas;
+    background-color: DeepSkyBlue;
+    transition: padding 0.5s ease;
+}
+
+.boton{
+    text-align: center;
+}
 #campoFrase{
+    font-size: xx-large;
+    color: white;
     text-align:center;
 }
 .izquierda{

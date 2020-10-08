@@ -1,7 +1,10 @@
 var fraseDeAmor = document.querySelector("#fraseDeAmor")
 var fraseDeDesamor = document.querySelector("#fraseDeDesamor")
 var fraseDeInspiracion = document.querySelector("#fraseDeInspiracion")
+var emojisPrediccion = document.querySelector("#emojis")
+var emojis = "🎈 🎆 🎇 🧨 ✨ 🎉 🎊 🎃 🎄 🎋 🎍 🎎 🎏 🎐 🎑 🧧 🎀 🎁 🎗 🎞 🎟 🎫 🎠 🎡 🎢 🎪 🎭 🖼 🎨 🧵 🧶 🛒 👓 🕶 🦺 🥽 🥼 🧥 👔 👕 👖 🩳 🧣 🧤 🧦 👗 🥻 👘 👚 🩲 🩱 👙 👛 👜 👝 🛍 🎒 👞 👟 🥾 🥿 👠 👡 👢 🩰 🧢 ⛑ 👒 🎩 🎓 💋 💄 💎 💍 ⚽ ⚾ 🥎 🏀 🏐 🏈 🏉 🎱 🎳 🥌 ⛳ ⛸ 🎣 🤿 🎽 🛶 🎿 🏒 🥍 🏏 🏑 🏓 🏸 🎾 🥏 🪁 🎯 🥊 🥋 🥇 🥈 🥉 🏅 🎖 🏆 🎮 🕹 🎰 🎲 🔮 🧿 🧩 🧸 🪀 🎴 🃏 🀄 ♟ ♠ ♣ ♥ ♦ 🔈 🔉 🔊 📢 📣 🔔 🎼 🎵 🎶 🎙 🎤 🎚 🎛 🎧 📯 🥁 🎷 🎺 🪕 🎹 🎻 📻 🔒 🔓 🔏 🔐 🔑 🗝 🪓 🔨 ⛏ ⚒ 🛠 🔧 🔩 🧱 ⚙ 🗜 🛢 ⚗ 🧪 🧫 🧬 🩺 💉 🩸 🩹 💊 🔬 🔭 ⚖ 📿 🔗 ⛓ 🧰 🧲 🦯 🛡 🏹 🗡 ⚔ 🔪 💣 🔫 ☎ 📞 📟 📠 📱 📲 📳 📴 🚬 ⚰ ⚱ 🗿 🔋 🔌 💻 🖥 🖨 ⌨ 🖱 🖲 💽 💾 💿 📀 🧮 🎥 🎬 📽 📡 📺 📷 📸 📹 📼 🔍 🔎 🕯 🪔 💡 🔦 🏮 📔 📕 📖 📗 📘 📙 📚 📓 📃 📒 📜 📄 📑 📰 🗞 🔖 💰 💴 💵 💶 💷 💸 💳 🧾 🏧 ✉ 📧 📨 📩 📤 📥 📦 📫 📪 📬 📭 📮 🗳 ✏ ✒ 🖋 🖊 🖌 🖍 📝 🗒 💼 📁 📂 🗂 📅 📆 🗓 📇 📈 📉 📊 📋 📌 📍 📎 🖇 📏 📐 ✂ 🗃 🗄 🗑 ⌛ ⏳ ⌚ ⏰ ⏱ ⏲ 🕰 " . split(" ")
 var campoFrase = document.querySelector("#campoFrase")
+
 function obtenerNumeroAleatorio(min, max) {
     return Math.random() * (max - min) + min;
 }
@@ -60,4 +63,16 @@ fraseDeDesamor.addEventListener("click",() => {
 fraseDeInspiracion.addEventListener("click",() => {
     let index = parseInt(obtenerNumeroAleatorio(0,inspiracion.length))
     campoFrase.innerHTML = inspiracion[index] + " 🎆 "
+})
+emojisPrediccion.addEventListener("click",() => {
+    let i = 0
+    var Intervalo = setInterval(() => {
+        let index = parseInt(obtenerNumeroAleatorio(0,emojis.length))
+        campoFrase.innerHTML = emojis[index]  
+        if (i == 20){
+            clearInterval(Intervalo)
+        }
+        i ++
+    },0.05 * 1000)
+    
 })

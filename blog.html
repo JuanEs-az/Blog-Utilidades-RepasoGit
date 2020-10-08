@@ -10,23 +10,44 @@
    <h1>Este es mi blog!🥰😎</h1>
 
    <section class = "izquierda">
-        <p>Wow!!! Ahora tiene estilo<br>
-        Solo me falta ubicar mejor <br>
-        los Parrafos en secciones!!!😉😉</p> 
+        <h2>NOVEDADES</h2>
+
+        <ul>
+            <li>
+                Wow!!! Ahora tiene estilo<br>
+                Solo me falta ubicar mejor <br>
+                los Parrafos en secciones!!!😉😉
+            </li> 
+        </ul>
+
     </section>
 
     <br>
 
     <section class = "derecha">
-        <p> Miren Chicos, Hay secciones distintas!!!<br>
-        No me lo creo tío</p>
+        <h2>AÑADIDOS RECIENTEMENTE</h2>
+
+        <ul>
+            <li>
+                Miren Chicos, Hay secciones distintas!!!
+                No me lo creo tío
+            </li>
+
+            <li>
+                Wow, chicos, miren ahora hay una opcion para
+                generar frases aleatorias de amor, desamor e inspiracion
+                Espero que lo disfruten✨
+            </li>
+
+        </ul>
+
     </section>
 
     <br>
     <h1>Frases</h1>
 
 
-    <div class = "boton">
+    <div class = "botonesFrases">
         <input type= "button" id = "fraseDeAmor" value = "Amor❤"/>
         <br>
         <input type= "button" id = "fraseDeDesamor" value = "Desamor💔"/>
@@ -36,9 +57,28 @@
         <input type= "button" id = "emojis" value = "Emojis Prediccion🔮"/>
     </div>
 
+    <hr>
+
+    <div class = "calculadora">
+        
+        <input type="number" class = "nums" id = "num1">
+        
+        <select id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <input type="number" id = "num2" class = "nums" >
+        <br>
+        <input value= "Hacer operacion" type = "button" id="calcular"/>
+    </div>
+
     <hr/>
-    <h3 id = "campoFrase"></h3>
+    <h3 id = "campo"></h3>
     <script src = "frases.js"></script>
+    <script src = "calculator.js"></script>
 </body>
 </html>
 

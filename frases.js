@@ -52,16 +52,38 @@ var inspiracion = [
     "No se trata de si te derriban, se trata de si te levantas.-Vince Lombardi.",
 ]
 fraseDeAmor.addEventListener("click",() => {
-    let index = parseInt(obtenerNumeroAleatorio(0,amor.length))
-    campoFrase.innerHTML = amor[index] + " ❤ "
+    let i = 0
+    var Intervalo = setInterval(() => {
+        let index = parseInt(obtenerNumeroAleatorio(0,amor.length))
+        campoFrase.innerHTML = amor[index] + " ❤ "   
+        if (i == 20){
+            clearInterval(Intervalo)
+        }
+        i ++
+    },0.05 * 1000)
+    
 })
 fraseDeDesamor.addEventListener("click",() => {
-    let index = parseInt(obtenerNumeroAleatorio(0,desamor.length))
-    campoFrase.innerHTML = desamor[index] + " 💔 "
+    let i = 0
+    var Intervalo = setInterval(() => {
+        let index = parseInt(obtenerNumeroAleatorio(0,desamor.length))
+        campoFrase.innerHTML = desamor[index] + " 💔 " 
+        if (i == 20){
+            clearInterval(Intervalo)
+        }
+        i ++
+    },0.05 * 1000)
 })
 fraseDeInspiracion.addEventListener("click",() => {
-    let index = parseInt(obtenerNumeroAleatorio(0,inspiracion.length))
-    campoFrase.innerHTML = inspiracion[index] + " 🎆 "
+    let i = 0
+    var Intervalo = setInterval(() => {
+        let index = parseInt(obtenerNumeroAleatorio(0,inspiracion.length))
+        campoFrase.innerHTML = inspiracion[index] + " 🎆 "  
+        if (i == 20){
+            clearInterval(Intervalo)
+        }
+        i ++
+    },0.05 * 1000)
 })
 emojisPrediccion.addEventListener("click",() => {
     let i = 0

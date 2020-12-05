@@ -1,19 +1,57 @@
 *{
-    color: black
+    font-family:'Luckiest Guy', cursive;
+    list-style: square;
+    margin:0;
+    padding:0;
+}
+.indicador{
+    margin-top:30px;
 }
 body{
     background-color: Tomato;
 }
+header{
+    background-color: #333;
+    height: 120px;
+    padding:10px;
+    line-height: 60px;
+}
+#logotipo{
+    width: 120px;
+    height:120px;
+    float:right;
+    margin-right:350px;
+}
+#slogan{
+    color:tomato;
+    text-align: center;
+    font-size:35px;
+    margin-bottom:10px;
+}
+#titulo{
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+    color:tomato; 
+    float:left;
+    margin-left:500px;
+}
+span.bigLetterTitle{
+    font-size:70px;
+    font-family:'Luckiest Guy', cursive;
+    color:tomato;
+}
 h1{
     text-align: center;
     bottom:0;
+    color:#333;
+    font-family:'Luckiest Guy', cursive;
 }
 input[type="button"]{
     font-size:small;
     border-radius: 10px;
     padding: 12px;
-    font-family:Consolas;
     background-color: tomato;
+    color:#333;
 }
 input[type="button"]:hover{
     border-radius: 10px;
@@ -21,9 +59,11 @@ input[type="button"]:hover{
     font-family:Consolas;
     background-color: DeepSkyBlue;
     transition: padding 0.5s ease;
+    color:#333;
 }
 .nums{
     width: 100px;
+    color:#333;
     border-radius: 12px;
 }
 .nums:hover{
@@ -40,18 +80,22 @@ input[type="button"]:hover{
     font-size: xx-large;
     color: white;
     text-align:center;
+    height:100px;
 }
 .izquierda{
     position: relative;
     text-align: left;
     margin-right: 0;
     float: left;
+    text-align: justify;
 }
 .derecha {
     position: relative;
     text-align: right;
     margin-left: 880px;
+    text-align: justify;
 }
 .derecha *,.izquierda *{
-    text-align:center
+    text-align:center;
+    color:#333;
 }

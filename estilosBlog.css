@@ -1,3 +1,4 @@
+
 *{
     font-family:'Luckiest Guy', cursive;
     list-style: square;
@@ -7,9 +8,7 @@
 .indicador{
     margin-top:30px;
 }
-body{
-    background-color: Tomato;
-}
+
 header{
     background-color: #333;
     height: 120px;
@@ -23,7 +22,6 @@ header{
     margin-right:350px;
 }
 #slogan{
-    color:tomato;
     text-align: center;
     font-size:35px;
     margin-bottom:10px;
@@ -31,51 +29,59 @@ header{
 #titulo{
     font-family: 'Bungee', cursive;
     font-size: 40px;
-    color:tomato; 
     float:left;
     margin-left:500px;
+    text-shadow: 0px 0px 0px transparent;
 }
 span.bigLetterTitle{
     font-size:70px;
     font-family:'Luckiest Guy', cursive;
-    color:tomato;
 }
 h1{
     text-align: center;
     bottom:0;
     color:#333;
     font-family:'Luckiest Guy', cursive;
+    text-shadow: 0px 0px 5px white;
 }
 input[type="button"]{
     font-size:small;
     border-radius: 10px;
     padding: 12px;
-    background-color: tomato;
     color:#333;
+    text-shadow: 0px 0px 5px white;
+    cursor:pointer
 }
 input[type="button"]:hover{
     border-radius: 10px;
     padding: 20px;
-    font-family:Consolas;
-    background-color: DeepSkyBlue;
+    background-color: #333;
     transition: padding 0.5s ease;
-    color:#333;
+
 }
 .nums{
     width: 100px;
     color:#333;
+    text-shadow: 0px 0px 5px white;
     border-radius: 12px;
 }
-.nums:hover{
-    background-color: tomato;
-    transition: background-color 0.5s ease;
-}
+
 .calculadora{
     text-align: center;
 }
 .botonesFrases{
-    text-align: center;
+    clear:both;
+    margin:0px auto;
+    width:200px;
 }
+.botonesFrases * {
+    text-align: center;
+    margin: 0px auto;
+    width: 100%;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
 #campo{
     font-size: xx-large;
     color: white;
@@ -85,23 +91,52 @@ input[type="button"]:hover{
 .izquierda{
     position: relative;
     text-align: left;
-    margin-right: 0;
+    margin-left: 60px;
     float: left;
     text-align: justify;
 }
 .derecha {
     position: relative;
-    text-align: right;
-    margin-left: 880px;
+    float: right;
     text-align: justify;
+    margin-right: 60px;
+}
+.izquierda,.derecha{
+    width:300px;
 }
 .derecha *,.izquierda *{
     text-align:center;
     color:#333;
+    text-shadow: 0px 0px 5px white;
 }
 footer{
-    color:tomato;
+
     background-color:#333;
     text-align: center;
     font-size:40px;
+}
+input[type="number"]{
+    text-align: center;
+}
+
+#colorChoose{
+    position: fixed;
+    top:40%;
+    left:0px;
+    width: 70px;
+    height:140px;
+    background-color: rgba(51, 51, 51, 0.514);
+}
+#colorChoose #red{
+    background-color:tomato;
+}
+#colorChoose #blue{
+    background-color:deepskyblue;
+}
+#colorChoose #blue, #colorChoose #red{
+    width: 90%;
+    height: 40%;
+    cursor: pointer;
+    margin-left:3%;
+    margin-top: 10%
 }

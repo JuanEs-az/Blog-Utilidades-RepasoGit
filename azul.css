@@ -1,0 +1,17 @@
+*{
+    text-shadow: 0 0 0 transparent !important;
+}
+footer,#slogan,#titulo,span.bigLetterTitle,input[type="button"]:hover{
+    color:deepskyblue;
+    transition: all 0.5s ease-in;
+}
+
+input[type="button"],.nums:hover{
+    background-color:deepskyblue;
+    transition: all 0.5s ease-in;
+}
+body{
+    background-image: url(img/blueTheme.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}

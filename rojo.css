@@ -1,0 +1,14 @@
+footer,#slogan,#titulo,span.bigLetterTitle,input[type="button"]:hover{
+    color:tomato;
+    transition: all 0.5s ease-in;
+}
+
+input[type="button"],.nums:hover{
+    background-color:tomato;
+    transition: all 0.5s ease-in;
+}
+body{
+    background-image: url(img/redTheme.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
